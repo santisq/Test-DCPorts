@@ -1,0 +1,14 @@
+Service,Port
+Active Directory Web Services,9389
+RPC Endpoint Mapper,135
+NetBIOS Name Service,137
+NetBIOS Session Service,139
+RPC Dynamic Assignment,5000-6000
+SMB over IP (Microsoft-DS),445
+LDAP,389
+LDAP over SSL,636
+Global Catalog LDAP,3268
+Global Catalog LDAP over SSL,3269
+Kerberos,88
+Kerberos Change/Set password,464
+Remote Desktop Protocol,3389
