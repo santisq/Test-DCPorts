@@ -1,4 +1,4 @@
-# Function_DC-PortScan
+# DC-PortScan
 
     .SYNOPSIS
     Scans all Domain & Trust ports.
