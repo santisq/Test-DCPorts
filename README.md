@@ -8,7 +8,7 @@ Similar to PortQuery "Domain & Trust" scan but includes Dynamic-RPC ports (5000-
 `<ComputerName>` // Hostname of the server to scan.
 
 ### OUTPUTS
-System.Array. Returns an object with Computer Name, Port Number, Port Description and Port Status.
+`Object[]` // Returns an object with Computer Name, Port Number, Port Description and Port Status.
 
 ### USAGE EXAMPLES
 
