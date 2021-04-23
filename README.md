@@ -1,19 +1,18 @@
-# DC-PortScan
-
-    .SYNOPSIS
-    Scans all Domain & Trust ports.
+# Scan-DCPorts
+Scans all Domain & Trust ports.
     
-    .DESCRIPTION
-    Similar to PortQuery "Domain & Trust" scan but includes Dynamic-RPC ports (5000-6000).
+### DESCRIPTION
+Similar to PortQuery "Domain & Trust" scan but includes Dynamic-RPC ports (5000-6000).
     
-    .PARAMETER ComputerName
-    Hostname of the server to scan.
+### PARAMETERS 
+`<ComputerName>` // Hostname of the server to scan.
 
-    .OUTPUTS
-    System.Array. Returns an object with Computer Name, Port Number, Port Description and Port Status.
+### OUTPUTS
+System.Array. Returns an object with Computer Name, Port Number, Port Description and Port Status.
 
-    .EXAMPLE
-    C:\PS> Test-DCPorts DC01
+### USAGE EXAMPLES
+
+`C:\PS> Test-DCPorts DC01`
 
         ComputerName Port      Service                       Status            
         ------------ ----      -------                       ------            
@@ -31,7 +30,8 @@
         DC01         5000-6000 RPC Dynamic Assignment        ALL RPC PORTS OPEN
         DC01                   ICMP (ping)                   RESPONSE OK   
     
-    .EXAMPLE           
-    C:\PS> Get-ADDomainController -Filter * | Test-DCPorts
-        Would test all Domain Controllers.
+`C:\PS> Get-ADDomainController -Filter * | Test-DCPorts` // Would test all Domain Controllers.
  
+### Credits
+- [`Test-RPC`](https://www.powershellgallery.com/packages/Test-RPC/1.0/Content/Test-RPC.ps1) written by Ryan Ries
+- [`PortQry`](https://www.microsoft.com/en-us/download/details.aspx?id=17148) from Microsoft
