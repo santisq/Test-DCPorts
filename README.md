@@ -1,4 +1,4 @@
-# Scan-DCPorts
+# Test-DCPorts
 Scans all Domain & Trust ports.
     
 ### DESCRIPTION
