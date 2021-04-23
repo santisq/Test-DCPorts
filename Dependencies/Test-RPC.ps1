@@ -175,8 +175,3 @@ Function Test-RPC
 
     }
 }
-
-
-#Test-RPC -ComputerName VA132500,VA121370
-
-
